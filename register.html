@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register your GlobalReach client account to manage website projects, schedule consultations, and access support guarantees.">
+  <meta name="theme-color" content="#1D63FF">
+  <title>Client Registration | GlobalReach Portal</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#mainContent" class="skip-link">Skip to registration form</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="GlobalReach Home">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">GlobalReach</span>
+          <span class="brand-tagline">Beyond Borders</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+        <a href="index.html#guarantee" class="nav-link">Guarantee</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <a href="signin.html" class="btn btn-secondary btn-sm">Sign In</a>
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="index.html#pricing" class="mobile-nav-link">Pricing</a></li>
+      <li><a href="index.html#guarantee" class="mobile-nav-link">Guarantee</a></li>
+      <li><a href="signin.html" class="mobile-nav-link">Sign In</a></li>
+      <li><a href="register.html" class="mobile-nav-link active">Register</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="mainContent" class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <span class="badge badge-teal" style="margin-bottom: 0.5rem;">Client Onboarding</span>
+        <h2>Client Registration</h2>
+        <p class="text-sm text-secondary">
+          Create your client profile to manage web projects and activate your 3-year support guarantee.
+        </p>
+      </div>
+
+      <!-- Feedback Alert Banner -->
+      <div id="registerAlert" class="alert-banner" role="alert"></div>
+
+      <!-- Registration Form -->
+      <form id="registrationForm" novalidate>
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="fullName" class="form-label">Full Name *</label>
+          <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Priya Sharma" required autocomplete="name">
+        </div>
+
+        <!-- Employee / Register ID -->
+        <div class="form-group">
+          <label for="empId" class="form-label">Client / Register ID (6-12 chars) *</label>
+          <input type="text" id="empId" name="empId" class="form-control" placeholder="e.g. GR2026EXP" required autocomplete="off">
+          <span class="text-xs text-muted" style="margin-top: 2px; display: block;">Must be 6 to 12 alphanumeric characters.</span>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+          <label for="email" class="form-label">Business Email Address *</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="e.g. contact@business.com" required autocomplete="email">
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="form-group">
+          <label for="mobile" class="form-label">Mobile Number *</label>
+          <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="10-digit number starting with 6-9" required autocomplete="tel">
+        </div>
+
+        <!-- Division Dropdown -->
+        <div class="form-group">
+          <label for="dept" class="form-label">Business Category / Division *</label>
+          <select id="dept" name="dept" class="form-control" required>
+            <option value="">Choose your division...</option>
+            <option value="Business Owner">Business Owner</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="Startup">Startup</option>
+            <option value="Local Store">Local Store</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password" class="form-label">Password (Min 8 chars, A-Z, a-z, 0-9, symbol @$!%*?&) *</label>
+          <div class="password-input-wrapper">
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter secure password" required autocomplete="new-password">
+            <button type="button" class="password-toggle-btn" data-target="password" aria-label="Show password" title="Show password">
+              <svg class="icon-eye" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <svg class="icon-eye-slash" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="confirmPassword" class="form-label">Confirm Password *</label>
+          <div class="password-input-wrapper">
+            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Re-enter password" required autocomplete="new-password">
+            <button type="button" class="password-toggle-btn" data-target="confirmPassword" aria-label="Show password" title="Show password">
+              <svg class="icon-eye" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <svg class="icon-eye-slash" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Terms Checkbox -->
+        <div class="checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">
+            I agree to the <a href="index.html#terms" target="_blank" style="color: var(--color-blue-primary);">Terms of Service</a>, Privacy Policy, and understand the 3-Year Support Guarantee conditions.
+          </label>
+        </div>
+
+        <!-- Submit Button (Disabled until form is valid) -->
+        <button type="submit" id="registerSubmitBtn" class="btn btn-primary btn-full btn-lg" disabled aria-disabled="true">
+          Complete Registration
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        Already have a client account? <a href="signin.html">Sign in here</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="padding-top: var(--space-8); padding-bottom: var(--space-6);">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 GlobalReach Web Presence & Growth Portal. Secure client registration.</p>
+      <ul class="footer-legal-links">
+        <li><a href="index.html">Back to Home</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Floating Chatbot Widget -->
+  <button type="button" id="chatbotFab" class="chatbot-fab" aria-expanded="false" aria-controls="chatbotWindow" aria-label="Open ReachBot assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </button>
+  <aside id="chatbotWindow" class="chatbot-window" aria-label="ReachBot Chat Window">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path><rect x="3" y="8" width="18" height="12" rx="2"></rect><circle cx="9" cy="14" r="1"></circle><circle cx="15" cy="14" r="1"></circle></svg>
+        </div>
+        <div>
+          <h4 class="chatbot-title">ReachBot Assistant</h4>
+          <span class="chatbot-subtitle">● Online • Instant Help</span>
+        </div>
+      </div>
+      <button type="button" id="chatbotCloseBtn" class="chatbot-close-btn" aria-label="Close chat window">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="chatbotMessages" class="chatbot-messages" role="log"></div>
+    <div class="chatbot-suggestions">
+      <button type="button" class="suggestion-chip" data-query="guarantee">3-Yr Guarantee</button>
+      <button type="button" class="suggestion-chip" data-query="pricing">Pricing</button>
+      <button type="button" class="suggestion-chip" data-query="support">Support</button>
+    </div>
+    <form id="chatbotForm" class="chatbot-input-form" novalidate>
+      <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Ask a question..." autocomplete="off">
+      <button type="submit" class="chatbot-send-btn" aria-label="Send message">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </form>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

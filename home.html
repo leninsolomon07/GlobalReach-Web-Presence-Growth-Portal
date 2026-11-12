@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GlobalReach Client Dashboard - Track project milestones, saved estimates, consultations, and 3-year support status.">
+  <meta name="theme-color" content="#1D63FF">
+  <title>Client Dashboard | GlobalReach Portal</title>
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#mainContent" class="skip-link">Skip to dashboard overview</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="GlobalReach Home">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">GlobalReach</span>
+          <span class="brand-tagline">Client Portal</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" role="navigation" aria-label="Dashboard Navigation">
+        <a href="home.html" class="nav-link active" aria-current="page">Dashboard</a>
+        <a href="index.html#services" class="nav-link">Services</a>
+        <a href="index.html#pricing" class="nav-link">Packages</a>
+        <a href="index.html#calculator" class="nav-link">Estimator</a>
+        <a href="index.html#guarantee" class="nav-link">Support Guarantee</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+        <button type="button" id="dashLogoutBtn" class="btn btn-secondary btn-sm" aria-label="Log out of client session">Log Out</button>
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="home.html" class="mobile-nav-link active">Dashboard</a></li>
+      <li><a href="index.html" class="mobile-nav-link">Main Portal</a></li>
+      <li><a href="index.html#pricing" class="mobile-nav-link">Pricing Plans</a></li>
+      <li><a href="index.html#calculator" class="mobile-nav-link">Cost Calculator</a></li>
+      <li><a href="index.html#guarantee" class="mobile-nav-link">3-Year Guarantee</a></li>
+      <li><a href="index.html#contact" class="mobile-nav-link">Contact Support</a></li>
+    </ul>
+  </aside>
+
+  <!-- ======================================================================
+       Client Dashboard Container
+       - Desktop (>= 768px): grid-template-columns: 250px 1fr 300px;
+       - Mobile (< 768px): display: flex; flex-direction: column;
+       ====================================================================== -->
+  <main id="mainContent" class="dashboard-wrapper">
+    <div class="container">
+      <div id="clientDashboard" class="dashboard-container">
+        
+        <!-- LEFT COLUMN: Client Navigation Sidebar (250px on desktop) -->
+        <aside class="dashboard-sidebar" aria-label="Client Portal Sidebar">
+          <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-6); padding-bottom: var(--space-4); border-bottom: 1px solid var(--border-light);">
+            <div style="width: 44px; height: 44px; border-radius: var(--radius-full); background: linear-gradient(135deg, var(--color-blue-primary), var(--color-teal)); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold;">
+              GR
+            </div>
+            <div>
+              <h5 style="font-size: var(--font-size-sm); margin-bottom: 2px;">Client Portal</h5>
+              <span id="dashClientDept" class="text-xs text-muted">Business Partner</span>
+            </div>
+          </div>
+
+          <nav aria-label="Sidebar Navigation">
+            <ul class="dashboard-nav-list">
+              <li class="dashboard-nav-item">
+                <a href="home.html" class="active" aria-current="page">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  Overview
+                </a>
+              </li>
+              <li class="dashboard-nav-item">
+                <a href="index.html#pricing">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  Service Bundles
+                </a>
+              </li>
+              <li class="dashboard-nav-item">
+                <a href="index.html#calculator">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+                  Cost Estimator
+                </a>
+              </li>
+              <li class="dashboard-nav-item">
+                <a href="index.html#guarantee">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  Support Guarantee
+                </a>
+              </li>
+              <li class="dashboard-nav-item">
+                <a href="index.html#contact">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                  Contact Advisory
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div style="margin-top: var(--space-8); padding: var(--space-4); background-color: var(--bg-subtle); border-radius: var(--radius-md);">
+            <h6 style="font-size: var(--font-size-xs); margin-bottom: 4px; color: var(--text-primary);">Hourly Support Desk</h6>
+            <p class="text-xs text-muted" style="margin-bottom: 8px;">₹800/hr on-demand updates</p>
+            <a href="index.html#contact" class="btn btn-outline btn-full btn-sm">Request Revision</a>
+          </div>
+        </aside>
+
+        <!-- CENTER COLUMN: Primary Client Workflows (1fr on desktop) -->
+        <section class="dashboard-main" aria-label="Main Dashboard Content">
+          
+          <!-- 1. Welcome Card -->
+          <div class="dashboard-user-greeting">
+            <div>
+              <span class="badge badge-teal" style="margin-bottom: 0.5rem;">Verified Client Account</span>
+              <h2 style="font-size: 1.75rem; margin-bottom: 0.25rem;">
+                Welcome, <span id="dashWelcomeName" class="text-gradient">Valued Client</span>!
+              </h2>
+              <p class="text-sm text-secondary" style="max-width: 520px; margin: 0;">
+                Your online presence journey is actively tracked here. A stronger digital presence can help your business reach more potential customers and generate more enquiries globally.
+              </p>
+            </div>
+            <div style="display: none; @media(min-width: 640px){ display: block; }">
+              <span class="badge badge-popular" style="padding: 0.4rem 0.8rem;">Status: Active</span>
+            </div>
+          </div>
+
+          <!-- 2. Current Package & Project Progress Cards (Grid 2) -->
+          <div class="grid-2">
+            <!-- Current Package Card -->
+            <article class="card">
+              <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.75rem;">Selected Plan</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Business Growth Bundle</h3>
+              <p class="text-accent" style="font-size: 1.4rem; font-weight: bold; margin-bottom: 0.5rem;">₹24,999</p>
+              <p class="text-xs text-secondary" style="margin-bottom: var(--space-4);">
+                6-Page Responsive Web Architecture, Product/Portfolio Showcase, WhatsApp Chat, Local Search Setup & 3-Year Support Guarantee.
+              </p>
+              <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center;">
+                <span class="text-xs text-muted">Includes 3-Year Defect Coverage</span>
+                <a href="index.html#pricing" class="btn btn-outline btn-sm">Upgrade Plan</a>
+              </div>
+            </article>
+
+            <!-- Upcoming Consultation Card -->
+            <article class="card">
+              <span class="badge badge-teal" style="align-self: flex-start; margin-bottom: 0.75rem;">Advisory Session</span>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Website Discovery Call</h3>
+              <p class="text-sm" style="color: var(--color-blue-primary); font-weight: 600; margin-bottom: 0.5rem;">
+                📅 Tomorrow, 11:30 AM IST (Virtual)
+              </p>
+              <p class="text-xs text-secondary" style="margin-bottom: var(--space-4);">
+                Reviewing wireframes, responsive mobile layout, domain DNS settings, and target customer lead capture goals.
+              </p>
+              <div class="card-footer" style="display: flex; justify-content: space-between; align-items: center;">
+                <span class="text-xs text-muted">Dedicated Lead Architect</span>
+                <a href="index.html#contact" class="btn btn-secondary btn-sm">Reschedule</a>
+              </div>
+            </article>
+          </div>
+
+          <!-- 3. Project Progress Card -->
+          <article class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <span class="badge badge-teal" style="margin-bottom: 4px;">Delivery Roadmap</span>
+                <h3 style="font-size: 1.25rem;">Project Delivery Milestones</h3>
+              </div>
+              <span class="badge badge-blue">Phase 3 of 4: 75% Complete</span>
+            </div>
+
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 75%;"></div>
+            </div>
+
+            <div class="milestone-steps">
+              <span class="milestone-step done">✓ 1. Scope & Wireframe</span>
+              <span class="milestone-step done">✓ 2. HTML/CSS Build</span>
+              <span class="milestone-step done">⏳ 3. Responsive & WCAG Test</span>
+              <span class="milestone-step">4. Vercel Launch</span>
+            </div>
+
+            <p class="text-xs text-muted" style="margin-top: var(--space-4);">
+              Current sprint: Mobile viewport responsiveness verification (320px to 1024px) and cross-browser testing.
+            </p>
+          </article>
+
+          <!-- 4. Saved Estimate Card (Dynamically populated from localStorage) -->
+          <article class="card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span class="badge badge-blue">Local Saved Calculation</span>
+              <span class="text-xs text-muted">localStorage persistence</span>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Saved Project Cost Estimate</h3>
+            <div id="dashSavedEstimate">
+              <!-- Dynamically populated by js/app.js -->
+            </div>
+          </article>
+
+          <!-- 5. Quick Links Grid -->
+          <div class="grid-3">
+            <a href="index.html#pricing" class="card card-hover" style="text-decoration: none; text-align: center;">
+              <h5 style="color: var(--color-blue-primary); margin-bottom: 4px;">Service Bundles</h5>
+              <p class="text-xs text-secondary">Starter, Growth & Global</p>
+            </a>
+            <a href="index.html#calculator" class="card card-hover" style="text-decoration: none; text-align: center;">
+              <h5 style="color: var(--color-blue-primary); margin-bottom: 4px;">Cost Estimator</h5>
+              <p class="text-xs text-secondary">₹800/hr Custom Calculator</p>
+            </a>
+            <a href="index.html#guarantee" class="card card-hover" style="text-decoration: none; text-align: center;">
+              <h5 style="color: var(--color-blue-primary); margin-bottom: 4px;">3-Yr Guarantee</h5>
+              <p class="text-xs text-secondary">Coverage & SLA Terms</p>
+            </a>
+          </div>
+
+        </section>
+
+        <!-- RIGHT COLUMN: Tips & Recent Notifications (300px on desktop) -->
+        <aside class="dashboard-aside" aria-label="Portal Notifications and Growth Tips">
+          
+          <!-- Recent Notifications Card -->
+          <div class="card">
+            <h4 style="font-size: var(--font-size-base); margin-bottom: var(--space-3); display: flex; align-items: center; justify-content: space-between;">
+              <span>Activity & Updates</span>
+              <span class="badge badge-teal">Live</span>
+            </h4>
+            
+            <div class="notification-item">
+              <h6>Mobile Responsiveness Verified</h6>
+              <p class="text-muted">Viewport tests passed across 320px, 768px, and 1024px devices.</p>
+              <span class="text-muted" style="font-size: 10px;">2 hours ago</span>
+            </div>
+            <div class="notification-item">
+              <h6>Guarantee Certificate Generated</h6>
+              <p class="text-muted">3-Year Support Guarantee linked to register ID.</p>
+              <span class="text-muted" style="font-size: 10px;">Yesterday</span>
+            </div>
+            <div class="notification-item">
+              <h6>Security Audit Complete</h6>
+              <p class="text-muted">Form inputs sanitized, safe DOM rendering validated.</p>
+              <span class="text-muted" style="font-size: 10px;">2 days ago</span>
+            </div>
+          </div>
+
+          <!-- Web Presence Growth Tips -->
+          <div class="card" style="background: linear-gradient(180deg, var(--bg-surface), var(--bg-subtle));">
+            <h4 style="font-size: var(--font-size-base); margin-bottom: var(--space-2); color: var(--color-blue-primary);">
+              💡 Growth Best Practices
+            </h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-2);">
+              <li class="text-xs text-secondary">
+                <strong>High-Quality Images:</strong> Real photos of your products and workshop generate up to 2.5x more enquiries than stock pictures.
+              </li>
+              <li class="text-xs text-secondary">
+                <strong>Transparent Pricing:</strong> Displaying service ranges or packages builds immediate credibility with corporate clients.
+              </li>
+              <li class="text-xs text-secondary">
+                <strong>Rapid Lead Follow-Up:</strong> Responding to website consultation requests within 2 hours increases conversion chances.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support Guarantee Reminder -->
+          <div class="card" style="border: 1px dashed var(--color-teal);">
+            <div style="display: flex; gap: var(--space-2); align-items: center; margin-bottom: 4px;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-teal)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <h5 style="font-size: var(--font-size-sm); margin: 0;">3-Year Support Active</h5>
+            </div>
+            <p class="text-xs text-muted" style="margin-bottom: var(--space-3);">
+              Defect corrections & minor text updates are complimentary until November 2029.
+            </p>
+            <a href="index.html#guarantee" class="text-xs" style="color: var(--color-blue-primary); text-decoration: none; font-weight: 600;">Review Policy Details →</a>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="padding-top: var(--space-8); padding-bottom: var(--space-6);">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 GlobalReach Web Presence & Growth Portal. Client Workspace.</p>
+      <ul class="footer-legal-links">
+        <li><a href="index.html">Main Website</a></li>
+        <li><a href="index.html#pricing">Packages</a></li>
+        <li><a href="index.html#contact">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Floating Chatbot Widget -->
+  <button type="button" id="chatbotFab" class="chatbot-fab" aria-expanded="false" aria-controls="chatbotWindow" aria-label="Open ReachBot assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+  </button>
+  <aside id="chatbotWindow" class="chatbot-window" aria-label="ReachBot Chat Window">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path><rect x="3" y="8" width="18" height="12" rx="2"></rect><circle cx="9" cy="14" r="1"></circle><circle cx="15" cy="14" r="1"></circle></svg>
+        </div>
+        <div>
+          <h4 class="chatbot-title">ReachBot Assistant</h4>
+          <span class="chatbot-subtitle">● Online • Instant Help</span>
+        </div>
+      </div>
+      <button type="button" id="chatbotCloseBtn" class="chatbot-close-btn" aria-label="Close chat window">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div id="chatbotMessages" class="chatbot-messages" role="log"></div>
+    <div class="chatbot-suggestions">
+      <button type="button" class="suggestion-chip" data-query="support">Support</button>
+      <button type="button" class="suggestion-chip" data-query="guarantee">3-Yr Guarantee</button>
+      <button type="button" class="suggestion-chip" data-query="hourly">Hourly ₹800</button>
+    </div>
+    <form id="chatbotForm" class="chatbot-input-form" novalidate>
+      <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Ask ReachBot..." autocomplete="off">
+      <button type="submit" class="chatbot-send-btn" aria-label="Send">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </form>
+  </aside>
+
+  <!-- JavaScript Modules -->
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

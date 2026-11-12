@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GlobalReach Web Presence & Growth Portal - Professional web design and digital presence solutions for small businesses, independent professionals, local shops, and creators.">
+  <meta name="theme-color" content="#1D63FF">
+  <title>GlobalReach | Web Presence & Growth Portal</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- ======================================================================
+       Site Header & Responsive Navigation
+       ====================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="GlobalReach Home">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">GlobalReach</span>
+          <span class="brand-tagline">Beyond Borders</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#guarantee" class="nav-link">Guarantee</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Navigation Actions & Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Auth CTAs -->
+        <a href="signin.html" class="btn btn-secondary btn-sm" style="display: none; @media(min-width: 640px){ display: inline-flex; }">Sign In</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Register</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside id="mobileDrawer" class="mobile-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="#problem" class="mobile-nav-link">The Challenge</a></li>
+      <li><a href="#services" class="mobile-nav-link">Our Services</a></li>
+      <li><a href="#why-website" class="mobile-nav-link">Why a Website</a></li>
+      <li><a href="#pricing" class="mobile-nav-link">Pricing & Bundles</a></li>
+      <li><a href="#calculator" class="mobile-nav-link">Cost Calculator</a></li>
+      <li><a href="#guarantee" class="mobile-nav-link">3-Year Guarantee</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link">Success Stories</a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="signin.html" class="btn btn-secondary btn-full">Sign In</a>
+      <a href="register.html" class="btn btn-primary btn-full">Client Registration</a>
+      <a href="home.html" class="btn btn-outline btn-full btn-sm">Client Dashboard</a>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       Main Content (Sections in exact specified order)
+       ====================================================================== -->
+  <main id="mainContent">
+
+    <!-- 1. HERO SECTION -->
+    <section class="section hero-section" id="hero" aria-labelledby="heroTitle">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-tag">Take your business beyond borders</span>
+          <h1 id="heroTitle" class="hero-title">
+            Take Your Business <span class="text-gradient">Beyond Borders</span>
+          </h1>
+          <p class="hero-description">
+            A stronger online presence can help your business reach more potential customers and generate more enquiries. GlobalReach creates modern, high-performance web solutions tailored for small businesses, independent professionals, local shops, and creative studios.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary btn-lg">Get a Free Consultation</a>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Explore Packages</a>
+          </div>
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <h3>₹800/hr</h3>
+              <p>Transparent Rate</p>
+            </div>
+            <div class="stat-item">
+              <h3>3 Years</h3>
+              <p>Support Guarantee</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Mobile Responsive</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Abstract Global Connectivity Illustration -->
+        <div class="hero-visual-card" aria-hidden="true">
+          <svg class="hero-visual-svg" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="heroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1D63FF" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#00ADB5" stop-opacity="0.9" />
+              </linearGradient>
+              <linearGradient id="heroGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#F39C12" />
+                <stop offset="100%" stop-color="#1D63FF" />
+              </linearGradient>
+              <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="12" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            <!-- Background Grid & Orbital Rings -->
+            <circle cx="250" cy="200" r="160" stroke="#1D63FF" stroke-opacity="0.15" stroke-dasharray="6 6" />
+            <circle cx="250" cy="200" r="110" stroke="#00ADB5" stroke-opacity="0.25" />
+            <circle cx="250" cy="200" r="60" stroke="#1D63FF" stroke-opacity="0.3" stroke-width="2" />
+            <!-- Connection Lines -->
+            <path d="M120 100 Q 250 60 380 120" stroke="url(#heroGrad1)" stroke-width="2" stroke-linecap="round" />
+            <path d="M90 280 Q 250 340 410 270" stroke="url(#heroGrad1)" stroke-width="2" stroke-linecap="round" />
+            <path d="M140 180 L 360 220" stroke="url(#heroGrad2)" stroke-width="1.5" stroke-opacity="0.7" />
+            <!-- Nodes & Digital Growth Markers -->
+            <g filter="url(#softGlow)">
+              <circle cx="250" cy="200" r="28" fill="url(#heroGrad1)" />
+            </g>
+            <circle cx="250" cy="200" r="12" fill="#ffffff" />
+            <circle cx="120" cy="100" r="16" fill="#1D63FF" />
+            <circle cx="380" cy="120" r="18" fill="#00ADB5" />
+            <circle cx="90" cy="280" r="14" fill="#F39C12" />
+            <circle cx="410" cy="270" r="20" fill="#1D63FF" />
+            <circle cx="250" cy="70" r="10" fill="#00ADB5" />
+            <!-- Floating Mini Dashboard Cards -->
+            <rect x="290" y="240" width="160" height="75" rx="12" fill="#0B192C" fill-opacity="0.92" stroke="#1D63FF" stroke-width="1.5" />
+            <text x="306" y="266" fill="#ffffff" font-size="11" font-weight="bold" font-family="system-ui">Enquiry Influx</text>
+            <text x="306" y="292" fill="#00ADB5" font-size="18" font-weight="800" font-family="system-ui">+148% Reach</text>
+            
+            <rect x="50" y="80" width="150" height="65" rx="12" fill="#0B192C" fill-opacity="0.92" stroke="#00ADB5" stroke-width="1.5" />
+            <text x="66" y="104" fill="#CBD5E1" font-size="10" font-family="system-ui">Global Discovery</text>
+            <text x="66" y="126" fill="#F39C12" font-size="16" font-weight="bold" font-family="system-ui">Active 24/7</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PROBLEM STATEMENT SECTION -->
+    <section class="section section-alt" id="problem" aria-labelledby="problemTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Market Realities</span>
+          <h2 id="problemTitle" class="section-title">The Challenge Faced by Small Businesses & Creators</h2>
+          <p class="section-subtitle">
+            Many small businesses and independent professionals remain difficult to discover online, especially outside their immediate local neighbourhood.
+          </p>
+        </div>
+        <div class="grid-4">
+          <article class="problem-card">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line></svg>
+            </div>
+            <h3>Reduced Consumer Trust</h3>
+            <p class="text-sm">Modern buyers look up brands before purchasing. Without a dedicated professional website, potential customers often question credibility.</p>
+          </article>
+          <article class="problem-card">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+            </div>
+            <h3>Fewer Customer Enquiries</h3>
+            <p class="text-sm">Relying solely on social media algorithms leaves businesses vulnerable to erratic reach and lost client enquiries.</p>
+          </article>
+          <article class="problem-card">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3>Unclear Pricing & Offerings</h3>
+            <p class="text-sm">Clients struggle to understand service tiers or work scopes without a structured, transparent portfolio website.</p>
+          </article>
+          <article class="problem-card">
+            <div class="problem-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16.2 7.8l-2 6.3-6.4 2 2-6.3z"></path></svg>
+            </div>
+            <h3>Limited Customer Reach</h3>
+            <p class="text-sm">Independent professionals miss out on regional, national, and international clients seeking their specialized skills.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OUR SOLUTION SECTION -->
+    <section class="section" id="solution" aria-labelledby="solutionTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Engineered for Growth</span>
+          <h2 id="solutionTitle" class="section-title">How GlobalReach Bridges the Digital Divide</h2>
+          <p class="section-subtitle">
+            We provide responsive websites, clear service packages, consultation support, and customer-friendly tools tailored to your operational realities.
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="solution-card">
+            <div class="solution-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3>High-Performance Responsive Websites</h3>
+            <p class="text-sm">Clean, semantic HTML5 and modern CSS built to load fast on any network, providing seamless browsing on phones, tablets, and desktops.</p>
+          </article>
+          <article class="solution-card">
+            <div class="solution-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+            </div>
+            <h3>Transparent, Fixed Bundles & Hourly Rates</h3>
+            <p class="text-sm">No hidden retainers or confusing tech jargon. Choose between fixed bundles or our simple ₹800/hour development plan.</p>
+          </article>
+          <article class="solution-card">
+            <div class="solution-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+            </div>
+            <h3>3-Year Defect & Guidance Guarantee</h3>
+            <p class="text-sm">Enjoy long-term peace of mind with our three-year support commitment covering implementation defect repairs and minor updates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION -->
+    <section class="section section-alt" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Core Capabilities</span>
+          <h2 id="servicesTitle" class="section-title">Tailored Web Presence Services</h2>
+          <p class="section-subtitle">
+            Comprehensive digital capabilities designed specifically for independent practitioners, local retailers, and service providers.
+          </p>
+        </div>
+        <div class="grid-3">
+          <!-- Service 1 -->
+          <article class="card service-card card-hover">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3>Website Design</h3>
+            <p class="text-sm">Bespoke, brand-aligned visual architecture crafted to showcase your unique story, products, and services cleanly.</p>
+            <ul class="service-deliverables">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom brand aesthetics</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Clear visual hierarchy</li>
+            </ul>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="card service-card card-hover">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            </div>
+            <h3>Responsive Mobile Optimisation</h3>
+            <p class="text-sm">Over 70% of visitors browse on phones. We ensure every button, form, and layout element functions smoothly on small screens.</p>
+            <ul class="service-deliverables">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Fluid touch targets & navigation</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Sub-second mobile loading</li>
+            </ul>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="card service-card card-hover">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3>Brand and Portfolio Websites</h3>
+            <p class="text-sm">Ideal for architects, consultants, photographers, and artisans wanting a credible showcase for case studies and portfolios.</p>
+            <ul class="service-deliverables">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Filterable gallery views</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Client testimonial showcases</li>
+            </ul>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="card service-card card-hover">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3>Landing Pages for Products & Services</h3>
+            <p class="text-sm">Laser-focused, single-page funnels designed to turn advertising or social traffic into verified qualified business leads.</p>
+            <ul class="service-deliverables">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Strategic value-proposition copy</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> High-converting enquiry forms</li>
+            </ul>
+          </article>
+
+          <!-- Service 5 -->
+          <article class="card service-card card-hover">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            </div>
+            <h3>Website Maintenance</h3>
+            <p class="text-sm">Continuous technical upkeep, image optimizations, bug remediation, security hardening, and minor content adjustments.</p>
+            <ul class="service-deliverables">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Code integrity checks</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Scheduled backups & recovery</li>
+            </ul>
+          </article>
+
+          <!-- Service 6 -->
+          <article class="card service-card card-hover">
+            <div class="service-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3>Digital Presence Consultation</h3>
+            <p class="text-sm">One-on-one strategic advisory sessions exploring domain strategy, SEO basics, analytics setup, and international outreach.</p>
+            <ul class="service-deliverables">
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Actionable digital roadmap</li>
+              <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Local & export search audit</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHY A WEBSITE HELPS SECTION -->
+    <section class="section" id="why-website" aria-labelledby="whyTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Value Proposition</span>
+          <h2 id="whyTitle" class="section-title">Why a Professional Website Powers Your Growth</h2>
+          <p class="section-subtitle">
+            A stronger online presence can help your business reach more potential customers and generate more enquiries across borders.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="card benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3>24/7 Online Visibility</h3>
+            <p class="text-sm">Your website operates around the clock, answering prospect questions even while your physical office or workshop is closed.</p>
+          </div>
+          <div class="card benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3>Builds Lasting Trust</h3>
+            <p class="text-sm">A verified custom domain, SSL security badge, and organized showcase establish instant authority with corporate and overseas clients.</p>
+          </div>
+          <div class="card benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+            </div>
+            <h3>Makes Services Clear</h3>
+            <p class="text-sm">Eliminate repetitive explanatory phone calls. Clearly outlined scopes, pricing tiers, and deliverables save you and your clients valuable time.</p>
+          </div>
+          <div class="card benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <h3>Encourages Inbound Enquiries</h3>
+            <p class="text-sm">Friction-free consultation forms, WhatsApp buttons, and click-to-call links make it effortless for interested visitors to start a conversation.</p>
+          </div>
+          <div class="card benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3>Cross-Device Consistency</h3>
+            <p class="text-sm">Delivers a polished, uniform user experience whether a prospect views your catalog on an iPhone, tablet, or 4K workstation monitor.</p>
+          </div>
+          <div class="card benefit-card">
+            <div class="benefit-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3>Global Market Access</h3>
+            <p class="text-sm">Overcome geographical limits. Showcase your craftsmanship and service capabilities to distributors and retail buyers worldwide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PRICING SECTION -->
+    <section class="section section-alt" id="pricing" aria-labelledby="pricingTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Transparent Investment</span>
+          <h2 id="pricingTitle" class="section-title">Straightforward, Predictable Pricing</h2>
+          <p class="section-subtitle">
+            Choose our flexible hourly engagement or fixed-scope packages engineered for rapid business launch.
+          </p>
+        </div>
+
+        <!-- Hourly Work Highlight Banner -->
+        <div class="hourly-rate-banner">
+          <div class="hourly-info">
+            <span class="badge badge-teal" style="margin-bottom: 0.5rem;">Flexible Engagement</span>
+            <h3>Hourly Development & Consultation</h3>
+            <p>Ideal for custom feature requests, specialized tweaks, and on-demand digital advisory.</p>
+          </div>
+          <div style="text-align: right;">
+            <div class="hourly-price-tag">₹800 <span style="font-size: 1rem; font-weight: normal; color: #ffffff;">/ hour</span></div>
+            <a href="#calculator" class="btn btn-accent btn-sm" style="margin-top: 0.5rem;">Estimate Your Hours</a>
+          </div>
+        </div>
+
+        <!-- Fixed Bundles Grid -->
+        <div class="grid-3">
+          <!-- Starter Bundle -->
+          <article class="pricing-card">
+            <div class="pricing-card-header">
+              <span class="badge badge-blue">Starter Bundle</span>
+              <h3 style="margin-top: 0.5rem;">Local Starter</h3>
+              <p class="text-xs text-muted">Essential digital presence for shops and sole traders</p>
+              <div class="price-box">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">9,999</span>
+                <span class="price-period">one-time</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 3 Responsive Pages</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Mobile-Optimized Layout</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Contact Form & Google Maps</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 3-Year Support Guarantee</li>
+            </ul>
+            <div class="pricing-card-footer">
+              <a href="register.html?package=starter" class="btn btn-secondary btn-full">Choose Starter</a>
+            </div>
+          </article>
+
+          <!-- Growth Bundle (Most Popular) -->
+          <article class="pricing-card featured">
+            <div class="pricing-card-badge">
+              <span class="badge badge-popular">★ MOST POPULAR</span>
+            </div>
+            <div class="pricing-card-header">
+              <span class="badge badge-teal">Growth Bundle</span>
+              <h3 style="margin-top: 0.5rem;">Business Growth</h3>
+              <p class="text-xs text-muted">Expanded presence with lead capture & search setup</p>
+              <div class="price-box">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">24,999</span>
+                <span class="price-period">one-time</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 6 Custom Pages</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Portfolio & Gallery Showcase</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Local SEO & Google Search Console</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> WhatsApp Chat & Lead Capture</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 3-Year Support Guarantee</li>
+            </ul>
+            <div class="pricing-card-footer">
+              <a href="register.html?package=growth" class="btn btn-primary btn-full">Choose Growth</a>
+            </div>
+          </article>
+
+          <!-- Global Bundle -->
+          <article class="pricing-card">
+            <div class="pricing-card-header">
+              <span class="badge badge-blue">Global Bundle</span>
+              <h3 style="margin-top: 0.5rem;">Global Market</h3>
+              <p class="text-xs text-muted">Full-scale digital presence for export & high-reach firms</p>
+              <div class="price-box">
+                <span class="price-currency">₹</span>
+                <span class="price-amount">49,999</span>
+                <span class="price-period">one-time</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Up to 12 Multi-Section Pages</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Product Catalog & Request-Quote Module</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Multilingual Ready Architecture</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Speed CDN & Advanced Security</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> 3-Year Support Guarantee</li>
+            </ul>
+            <div class="pricing-card-footer">
+              <a href="register.html?package=global" class="btn btn-secondary btn-full">Choose Global</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. INTERACTIVE PROJECT COST CALCULATOR -->
+    <section class="section" id="calculator" aria-labelledby="calcTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Tool</span>
+          <h2 id="calcTitle" class="section-title">Project Cost & Timeline Estimator</h2>
+          <p class="section-subtitle">
+            Configure your custom scope to calculate an instant estimated investment based on our ₹800/hr benchmark.
+          </p>
+        </div>
+
+        <div class="calculator-container">
+          <div class="calculator-grid">
+            <!-- Form Side -->
+            <form id="projectCalculatorForm" novalidate>
+              <div class="calc-form-group">
+                <label for="calcServiceSelect" class="calc-label">Primary Service Scope</label>
+                <select id="calcServiceSelect" class="form-control">
+                  <option value="custom_web">Full Custom Website Development (25 hrs)</option>
+                  <option value="ecommerce">E-commerce & Product Catalog Store (40 hrs)</option>
+                  <option value="portfolio">Brand & Professional Portfolio (15 hrs)</option>
+                  <option value="landing">High-Conversion Landing Page (12 hrs)</option>
+                  <option value="webapp">Interactive Web Application Prototype (50 hrs)</option>
+                  <option value="consultation">Dedicated Hourly Consultation & Revisions (10 hrs)</option>
+                </select>
+              </div>
+
+              <div class="calc-form-group">
+                <label for="calcHoursInput" class="calc-label">Estimated Development Hours</label>
+                <input type="number" id="calcHoursInput" class="form-control" value="25" min="1" max="500" step="1" required>
+                <span class="text-xs text-muted" style="margin-top: 4px; display: block;">Standard rate: ₹800 per productive hour</span>
+              </div>
+
+              <div class="calc-form-group">
+                <label class="calc-label">Optional Add-On Enhancements</label>
+                <div class="calc-addons-grid">
+                  <label class="addon-checkbox-label">
+                    <input type="checkbox" name="calcAddon" value="mobile_opt">
+                    <span>Responsive PWA & Mobile Tuning</span>
+                    <span class="addon-price-pill">+₹3,500</span>
+                  </label>
+                  <label class="addon-checkbox-label">
+                    <input type="checkbox" name="calcAddon" value="maintenance_1yr">
+                    <span>1-Year Priority Backups & Upkeep</span>
+                    <span class="addon-price-pill">+₹6,000</span>
+                  </label>
+                  <label class="addon-checkbox-label">
+                    <input type="checkbox" name="calcAddon" value="express_delivery">
+                    <span>7-Day Fast-Track Express Delivery</span>
+                    <span class="addon-price-pill">+₹5,000</span>
+                  </label>
+                  <label class="addon-checkbox-label">
+                    <input type="checkbox" name="calcAddon" value="seo_setup">
+                    <span>Multilingual Search Engine Optimization</span>
+                    <span class="addon-price-pill">+₹4,500</span>
+                  </label>
+                </div>
+              </div>
+
+              <div id="calcErrorBanner" class="alert-banner alert-danger"></div>
+
+              <div style="display: flex; gap: var(--space-3); margin-top: var(--space-4);">
+                <button type="submit" class="btn btn-primary" id="calcSubmitBtn">Calculate Estimate</button>
+                <button type="button" class="btn btn-secondary" id="calcClearBtn">Clear</button>
+              </div>
+            </form>
+
+            <!-- Result Box Side -->
+            <div id="calcResultBox" class="calculator-result-box" aria-live="polite">
+              <div>
+                <span class="badge badge-teal" style="margin-bottom: 0.75rem;">Estimated Breakdown</span>
+                <h4 style="font-size: 1.15rem; margin-bottom: 1rem;">Investment Summary</h4>
+
+                <div class="calc-breakdown-row">
+                  <span>Development Work:</span>
+                  <strong id="calcBaseCost">₹20,000 (25 hrs @ ₹800/hr)</strong>
+                </div>
+                <div class="calc-breakdown-row">
+                  <span>Selected Add-Ons:</span>
+                  <strong id="calcAddonsCost">₹0</strong>
+                </div>
+                <div class="calc-breakdown-row">
+                  <span>Estimated Completion:</span>
+                  <strong id="calcTimeline">1 to 2 Weeks</strong>
+                </div>
+                <div class="calc-breakdown-row total-row">
+                  <span>Total Investment:</span>
+                  <span class="calc-total-val" id="calcTotalCost">₹20,000</span>
+                </div>
+                <span id="calcSavedBadge" class="calc-saved-badge">✓ Automatically saved to your local browser</span>
+              </div>
+
+              <div style="margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--border-light);">
+                <p class="text-xs text-muted" style="margin-bottom: 0.75rem;">
+                  Estimates are indicative and saved locally in your browser. All projects include our 3-year support guarantee.
+                </p>
+                <a href="#contact" class="btn btn-outline btn-full btn-sm">Lock in This Estimate & Consult</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. THREE-YEAR SUPPORT GUARANTEE -->
+    <section class="section section-alt" id="guarantee" aria-labelledby="guaranteeTitle">
+      <div class="container">
+        <div class="guarantee-card">
+          <div class="guarantee-header">
+            <div class="guarantee-badge-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg>
+            </div>
+            <div>
+              <span class="badge badge-teal" style="margin-bottom: 4px;">Long-Term Partnership</span>
+              <h2 id="guaranteeTitle" style="font-size: 1.85rem;">3-Year Website Support Guarantee</h2>
+              <p class="text-sm text-secondary">Our promise to keep your delivered online presence robust, verified, and functional.</p>
+            </div>
+          </div>
+
+          <div class="guarantee-columns">
+            <div class="guarantee-box">
+              <h4 style="color: var(--color-success);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                What Is Fully Covered for 3 Years
+              </h4>
+              <ul class="guarantee-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Correction of implementation defects and layout bugs in delivered code.</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Minor content adjustments (updating contact info, hours, text tweaks).</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Technical guidance and configuration support for your delivered website.</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg> Compatibility patches for modern browser rendering engine updates.</li>
+              </ul>
+            </div>
+
+            <div class="guarantee-box">
+              <h4 style="color: var(--text-muted);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+                Scope Limitations & Exclusions
+              </h4>
+              <ul class="guarantee-list">
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg> Third-party hosting, DNS, or external cloud infrastructure outages.</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg> New feature development or complete structural redesigns outside original scope.</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg> Recurring domain name registration and DNS renewal fees.</li>
+                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle></svg> Defects resulting from direct modifications made by client or outside parties.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="guarantee-disclaimer">
+            <strong>Important Outcome Disclosure:</strong>
+            While a stronger online presence can help your business reach more potential customers and generate more enquiries, commercial sales, search engine rankings, and profit outcomes are subject to broader market variables and cannot be legally guaranteed.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. TESTIMONIALS & SUCCESS STORIES -->
+    <section class="section" id="testimonials" aria-labelledby="testimonialTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Client Feedback</span>
+          <h2 id="testimonialTitle" class="section-title">Success Stories & Experiences</h2>
+          <p class="section-subtitle">
+            See how small business owners and creators leverage GlobalReach web solutions.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Testimonial 1 -->
+          <article class="card testimonial-card card-hover">
+            <span class="badge badge-fictional" style="align-self: flex-start; margin-bottom: 0.5rem;">Fictional Example Case Study</span>
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “Before GlobalReach built our catalog website, we relied entirely on footfall in Old Delhi. Within 60 days of launching, we received enquiries from gift shops in London and Dubai. The ₹800/hr billing was completely transparent.”
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">RK</div>
+              <div class="author-meta">
+                <h5>Rajesh Kumar</h5>
+                <p>Proprietor, Kumar Heritage Textiles</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="card testimonial-card card-hover">
+            <span class="badge badge-fictional" style="align-self: flex-start; margin-bottom: 0.5rem;">Fictional Example Case Study</span>
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “As an independent architectural consultant, having a clean portfolio that loads instantly on mobile transformed client meetings. The 3-year guarantee gave me total confidence that my showcase wouldn't break down.”
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">AS</div>
+              <div class="author-meta">
+                <h5>Ananya Sen</h5>
+                <p>Principal Architect, Sen Design Studio</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="card testimonial-card card-hover">
+            <span class="badge badge-fictional" style="align-self: flex-start; margin-bottom: 0.5rem;">Fictional Example Case Study</span>
+            <div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-quote">
+              “The Growth Bundle was exactly what our organic skincare venture needed. Clean navigation, clear product ingredients, and simple WhatsApp integration made ordering easy for our customers across India.”
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">NJ</div>
+              <div class="author-meta">
+                <h5>Neha Joshi</h5>
+                <p>Co-Founder, Prakriti Botanical Care</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Live API Dispatches Feed Container (api.js) -->
+        <div class="api-feed-container">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <div>
+              <span class="badge badge-blue">REST API Feed</span>
+              <h4 style="font-size: 1.1rem; margin-top: 4px;">Verified Client Growth Spotlights</h4>
+            </div>
+            <span class="text-xs text-muted">Powered by api.js</span>
+          </div>
+          <div id="apiDispatchesFeed">
+            <!-- Populated asynchronously with safe fetch & loading/error handling by api.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FAQ SECTION -->
+    <section class="section section-alt" id="faq" aria-labelledby="faqTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 id="faqTitle" class="section-title">Everything You Need to Know</h2>
+          <p class="section-subtitle">
+            Clear answers about pricing, delivery, guarantee terms, and consultation steps.
+          </p>
+        </div>
+
+        <div class="faq-list" role="region" aria-label="FAQ Accordion">
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq1">
+              <span>How does your ₹800/hour pricing work?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div id="faq1" class="faq-answer-panel" role="region">
+              <p>For custom tasks or revisions, we log actual hours worked at ₹800/hour. Before beginning any work, we provide a written estimate of anticipated hours. You never face surprise invoices.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq2">
+              <span>Which package is best for my business?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div id="faq2" class="faq-answer-panel" role="region">
+              <p>For small local shops needing basic contact info, the Starter Bundle (₹9,999) is ideal. Growing businesses needing a portfolio, lead capture, and local SEO prefer our Growth Bundle (₹24,999 - our most popular option). Businesses targeting international export buyers choose the Global Bundle (₹49,999).</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq3">
+              <span>How long does website delivery take?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div id="faq3" class="faq-answer-panel" role="region">
+              <p>Standard delivery timelines are: Starter Bundle (5 to 7 business days), Growth Bundle (10 to 14 business days), and Global Bundle (3 to 4 weeks). We also offer an express 7-day delivery add-on for urgent launches.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq4">
+              <span>Will my website look great on mobile phones?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div id="faq4" class="faq-answer-panel" role="region">
+              <p>Yes. Every website we engineer is strictly mobile-first and responsive. We test across screen widths from 320px up to ultra-wide displays to guarantee smooth navigation, accessible touch targets, and readable typography.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq5">
+              <span>What is included in the 3-Year Website Support Guarantee?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div id="faq5" class="faq-answer-panel" role="region">
+              <p>The 3-year guarantee covers correction of implementation defects, minor content updates (e.g. updating phone numbers, address, or team bios), and technical guidance. It excludes third-party hosting outages, domain renewal fees, client-caused code modifications, and guaranteed commercial profit increases.</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false" aria-controls="faq6">
+              <span>How do I get started with a free consultation?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div id="faq6" class="faq-answer-panel" role="region">
+              <p>Simply fill out the consultation form below or use our instant floating chatbot assistant. Our team will review your business profile and arrange a 30-minute discovery session at no cost or obligation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. CONTACT / CONSULTATION FORM -->
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 id="contactTitle" class="section-title">Schedule Your Free Consultation</h2>
+          <p class="section-subtitle">
+            Tell us about your business goals. We'll outline how a strategic web presence can help you reach more prospective clients.
+          </p>
+        </div>
+
+        <div class="calculator-container" style="max-width: 800px; margin: 0 auto;">
+          <div id="contactAlertBanner" class="alert-banner" role="alert"></div>
+
+          <form id="contactForm" novalidate>
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input type="text" id="contactName" name="fullName" class="form-control" placeholder="e.g. Rajesh Kumar" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" name="email" class="form-control" placeholder="e.g. rajesh@textiles.com" required>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="form-group">
+                <label for="contactPhone" class="form-label">Mobile Number *</label>
+                <input type="tel" id="contactPhone" name="mobile" class="form-control" placeholder="10-digit number (e.g. 9876543210)" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactBusinessType" class="form-label">Business Type *</label>
+                <select id="contactBusinessType" name="businessType" class="form-control" required>
+                  <option value="">Select your business category...</option>
+                  <option value="Small Business Owner">Small Business Owner</option>
+                  <option value="Independent Professional">Independent Professional</option>
+                  <option value="Local Retailer / Shop">Local Retailer / Shop</option>
+                  <option value="Creator / Artisan">Creator / Artisan</option>
+                  <option value="Startup / Tech Venture">Startup / Tech Venture</option>
+                  <option value="Other">Other Category</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactService" class="form-label">Service of Interest *</label>
+              <select id="contactService" name="serviceInterest" class="form-control" required>
+                <option value="">Select a service or package...</option>
+                <option value="Starter Bundle (₹9,999)">Starter Bundle (₹9,999)</option>
+                <option value="Growth Bundle (₹24,999)">Growth Bundle (₹24,999 - Most Popular)</option>
+                <option value="Global Bundle (₹49,999)">Global Bundle (₹49,999)</option>
+                <option value="Hourly Custom Development (₹800/hr)">Hourly Custom Development (₹800/hr)</option>
+                <option value="Website Maintenance & Audit">Website Maintenance & Audit</option>
+                <option value="General Consultation">General Digital Presence Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Your Project Vision / Requirements *</label>
+              <textarea id="contactMessage" name="message" rows="4" class="form-control" placeholder="Share a few details about your services, target audience, and current challenges..." required></textarea>
+            </div>
+
+            <p class="text-xs text-muted" style="margin-bottom: var(--space-4);">
+              🔒 Your contact information is kept strictly confidential. Enquiry submissions are simulated and stored safely in your browser's local storage.
+            </p>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Submit Consultation Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT TEAM ROLES SECTION -->
+    <section class="section section-alt" id="team-roles" aria-labelledby="teamTitle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Project Organization</span>
+          <h2 id="teamTitle" class="section-title">Project Team Roles & Responsibilities</h2>
+          <p class="section-subtitle">
+            How our multidisciplinary team coordinates the delivery of high-calibre web solutions.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="team-role-card">
+            <span class="team-role-badge">Governance</span>
+            <h4>Project Manager</h4>
+            <p>Leads milestone scheduling, scope governance, budget tracking, and end-to-end client delivery coordination.</p>
+          </div>
+          <div class="team-role-card">
+            <span class="team-role-badge">Strategy</span>
+            <h4>Product Manager</h4>
+            <p>Shapes package definitions, conducts customer discovery, and maximizes commercial value for local businesses.</p>
+          </div>
+          <div class="team-role-card">
+            <span class="team-role-badge">Design</span>
+            <h4>UI/UX Engineer</h4>
+            <p>Architects Figma wireframes, responsive design systems, accessible color contrasts, and interactive layouts.</p>
+          </div>
+          <div class="team-role-card">
+            <span class="team-role-badge">Verification</span>
+            <h4>Quality Assurance Engineer</h4>
+            <p>Oversees regex form validation, cross-browser compatibility, WCAG compliance, and viewport tests from 320px up.</p>
+          </div>
+          <div class="team-role-card">
+            <span class="team-role-badge">Infrastructure</span>
+            <h4>DevOps Engineer</h4>
+            <p>Manages Git version control branching, static pipeline bundling, and seamless Vercel cloud deployment.</p>
+          </div>
+          <div class="team-role-card">
+            <span class="team-role-badge">Protection</span>
+            <h4>Security Analyst</h4>
+            <p>Enforces client-side sanitisation, safe DOM node creation, XSS prevention, and strict validation rules.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       12. Site Footer
+       ====================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Purpose -->
+        <div class="footer-col">
+          <a href="index.html" class="brand-logo" style="margin-bottom: var(--space-3);">
+            <div class="brand-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <span class="brand-title">GlobalReach</span>
+          </a>
+          <p class="text-sm">
+            Empowering small businesses, independent professionals, local shops, and creators with modern web presence solutions that transcend borders.
+          </p>
+          <div class="footer-social-links" aria-label="Social media links">
+            <a href="#social-linkedin" class="social-btn" aria-label="LinkedIn profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="#social-twitter" class="social-btn" aria-label="Twitter X profile">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+            <a href="#social-github" class="social-btn" aria-label="GitHub repository">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#calculator">Cost Calculator</a></li>
+            <li><a href="#guarantee">Support Guarantee</a></li>
+            <li><a href="#contact">Consultation Form</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Portal Links -->
+        <div class="footer-col">
+          <h4>Client Portal</h4>
+          <ul class="footer-links">
+            <li><a href="register.html">Detailed Registration</a></li>
+            <li><a href="signup.html">Create Quick Account</a></li>
+            <li><a href="signin.html">Client Sign In</a></li>
+            <li><a href="home.html">Client Dashboard</a></li>
+            <li><a href="#team-roles">Project Team Roles</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Placeholder -->
+        <div class="footer-col">
+          <h4>Contact & Location</h4>
+          <ul class="footer-links">
+            <li class="text-sm">📧 hello@globalreach.example.com</li>
+            <li class="text-sm">📞 +91 98765 43210 (Toll-Free)</li>
+            <li class="text-sm">📍 Tech Enclave, Phase 2, Bengaluru, Karnataka, India</li>
+            <li class="text-sm">⏱️ Mon - Sat: 9:00 AM - 6:30 PM IST</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 GlobalReach Web Presence & Growth Portal. All rights reserved.</p>
+        <ul class="footer-legal-links">
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#disclaimer">Outcome Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       Floating Chatbot Assistant Widget
+       ====================================================================== -->
+  <button type="button" id="chatbotFab" class="chatbot-fab" aria-expanded="false" aria-controls="chatbotWindow" aria-label="Open ReachBot virtual assistant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <span class="chatbot-badge">1</span>
+  </button>
+
+  <aside id="chatbotWindow" class="chatbot-window" aria-label="ReachBot Chat Window">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"></path><rect x="3" y="8" width="18" height="12" rx="2"></rect><circle cx="9" cy="14" r="1"></circle><circle cx="15" cy="14" r="1"></circle></svg>
+        </div>
+        <div>
+          <h4 class="chatbot-title">ReachBot Assistant</h4>
+          <span class="chatbot-subtitle">● Online • Instant Help</span>
+        </div>
+      </div>
+      <div style="display: flex; gap: 4px;">
+        <button type="button" id="chatbotClearBtn" class="chatbot-close-btn" title="Reset chat history" aria-label="Reset chat history">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+        </button>
+        <button type="button" id="chatbotCloseBtn" class="chatbot-close-btn" title="Close chat window" aria-label="Close chat window">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scrollable Message Body -->
+    <div id="chatbotMessages" class="chatbot-messages" role="log" aria-live="polite"></div>
+
+    <!-- Quick Action Chips -->
+    <div class="chatbot-suggestions" aria-label="Common quick inquiries">
+      <button type="button" class="suggestion-chip" data-query="pricing">Pricing</button>
+      <button type="button" class="suggestion-chip" data-query="bundle">Bundles</button>
+      <button type="button" class="suggestion-chip" data-query="hourly">Hourly ₹800</button>
+      <button type="button" class="suggestion-chip" data-query="guarantee">3-Yr Guarantee</button>
+      <button type="button" class="suggestion-chip" data-query="consultation">Consultation</button>
+    </div>
+
+    <!-- Chat Input Form -->
+    <form id="chatbotForm" class="chatbot-input-form" novalidate>
+      <input type="text" id="chatbotInput" class="chatbot-input" placeholder="Type a message (e.g. pricing, guarantee)..." aria-label="Message for ReachBot" autocomplete="off">
+      <button type="submit" class="chatbot-send-btn" aria-label="Send message">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </form>
+  </aside>
+
+  <!-- JavaScript Modules -->
+  <script src="js/storage.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
